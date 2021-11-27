@@ -1,6 +1,6 @@
 import { defineComponent, onMounted } from 'vue'
 import { House } from './House'
-import { Ground } from './Ground'
+import { Ground } from './Ground/Ground'
 import { camera } from 'lunchboxjs'
 import * as THREE from 'three'
 
@@ -12,7 +12,7 @@ export const App = defineComponent({
         })
 
         return () => (
-            <lunchbox cameraPosition={[5, 5, 5]} transparent>
+            <lunchbox cameraPosition={[10, 10, 10]} transparent>
                 <Ground />
                 <House />
             </lunchbox>
