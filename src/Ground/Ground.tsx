@@ -1,6 +1,6 @@
 import { defineComponent } from 'vue'
 import groundVert from './groundVert.glsl?raw'
-import groundFragment from './groundFragment.glsl?raw'
+import groundFragment from './groundFragment.glsl'
 
 export const Ground = defineComponent({
     name: 'Ground',
