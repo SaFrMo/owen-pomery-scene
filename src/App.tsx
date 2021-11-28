@@ -23,7 +23,12 @@ export const App = defineComponent({
                 transparent
                 ortho
             >
-                <pointLight castShadow position={[-5, 10, 5]} />
+                <directionalLight
+                    castShadow
+                    position={[-10, 15, 8]}
+                    shadow-mapSize-width={1024}
+                    shadow-mapSize-height={1024}
+                />
                 <ambientLight intensity={0.3} />
                 <Ground />
                 <House />

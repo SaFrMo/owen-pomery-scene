@@ -10,7 +10,6 @@ export const groundMaterial = extendMaterial(
     THREE.MeshStandardMaterial as any,
     {
         header: useUv,
-        // headerFragment: '// zzz', //noise2d + voronoi2d,
         fragment: {
             '#include <clipping_planes_pars_fragment>': noise2d + voronoi2d,
             '#include <dithering_fragment>': groundFragment,
