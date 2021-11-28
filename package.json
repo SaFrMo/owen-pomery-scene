@@ -7,8 +7,9 @@
     "serve": "vite preview"
   },
   "dependencies": {
+    "glsl-noise": "0.0.0",
     "glsl-voronoi-noise": "1.2.2",
-    "lunchboxjs": "0.1.4003",
+    "lunchboxjs": "0.1.4004",
     "three": "0.133.1",
     "vue": "^3.2.16"
   },
