@@ -11,6 +11,7 @@
     "glsl-voronoi-noise": "1.2.2",
     "lunchboxjs": "0.1.4004",
     "three": "0.133.1",
+    "three-extend-material": "1.0.0",
     "vue": "^3.2.16"
   },
   "devDependencies": {
