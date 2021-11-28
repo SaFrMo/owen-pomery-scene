@@ -4,9 +4,9 @@ export const House = defineComponent({
     name: 'House',
     setup() {
         return () => (
-            <mesh>
+            <mesh castShadow receiveShadow>
                 <boxGeometry />
-                <meshBasicMaterial color="blue" />
+                <meshStandardMaterial color="blue" />
             </mesh>
         )
     },

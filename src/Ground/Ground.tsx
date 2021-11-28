@@ -11,7 +11,12 @@ export const Ground = defineComponent({
         }
 
         return () => (
-            <mesh position-y={-0.5} rotation-x={Math.PI * -0.5} scale={100}>
+            <mesh
+                receiveShadow
+                position-y={-0.5}
+                rotation-x={Math.PI * -0.5}
+                scale={100}
+            >
                 <planeGeometry />
                 <shaderMaterial args={[args]} />
             </mesh>

@@ -17,7 +17,14 @@ export const App = defineComponent({
         // render function
         // ====================
         return () => (
-            <lunchbox cameraPosition={[10, 10, 10]} transparent ortho>
+            <lunchbox
+                shadow={{ type: THREE.PCFSoftShadowMap }}
+                cameraPosition={[10, 10, 10]}
+                transparent
+                ortho
+            >
+                <pointLight castShadow position={[-5, 10, 5]} />
+                <ambientLight intensity={0.3} />
                 <Ground />
                 <House />
             </lunchbox>
